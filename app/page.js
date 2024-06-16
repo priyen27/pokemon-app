@@ -5,7 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
 import { FiSearch } from "react-icons/fi";
 
-import Card from "@/components/shared/card";
+import Card from "../components/shared/Card";
 import { useDebounce } from "@/hooks/useDebounce";
 
 const App = () => {
@@ -119,7 +119,6 @@ const App = () => {
       setFilteredPokemonList(pokemonList);
     }
   };
-  console.log('>>> filteredPokemonList:', filteredPokemonList)
 
   return (
     <div className="">
@@ -157,8 +156,8 @@ const App = () => {
               )}
             />
           </div>
-          <div className="flex items-center">
-            <div className="flex items-center pl-3 pointer-events-none absolute xs:top-[13%] md:top-[14%] left-[12px]">
+          <div className="flex items-center relative">
+            <div className="flex items-center pl-3 pointer-events-none absolute top-[25px] left-[4px]">
               <FiSearch className="h-5 w-5 text-gray-400" />{" "}
             </div>
             <input
