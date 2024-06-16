@@ -52,7 +52,7 @@ const PokemonDetailsPage = async({
       <div className="flex justify-center items-center h-full">
         <div className="h-fit w-[300px]">
           <div className="w-full flex justify-center items-center bg-[#7FFFD4] h-[200px] rounded-t-lg">
-            <Image src={pokemonDetails?.sprites?.front_default} width={300} height={200} alt="pokemon image" />
+            <Image src={pokemonDetails?.sprites?.front_default} width={200} height={200} alt="pokemon image" />
           </div>
           <div className="bg-[#bdb76b] p-6 leading-[25px] rounded-b-lg">
             {renderDetails('Name:', pokemonDetails?.name)}
